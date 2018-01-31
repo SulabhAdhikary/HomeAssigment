@@ -1,0 +1,57 @@
+<form novalidate #f="ngForm" (ngSubmit)="Submit()">
+  <fieldset>
+    <div class="form-group">
+      <label>First Name</label>
+      <input type="text"
+             class="form-control"
+             name="firstName" [(ngModel)]="model.firstName" minlegth="2" maxlength="25">
+    </div>
+
+    <div class="form-group">
+      <label>Last Name</label>
+      <input type="text"
+             class="form-control"
+             name="lastName" [(ngModel)]="model.lastName" minlegth="2" maxlength="25">
+    </div>
+  </fieldset>
+
+  <div class="form-group" [ngClass]="{
+      'has-danger':email.invalid && (email.dirty || email.touched),
+      'has-success': email.valid && (email.dirty || email.touched)
+    }">
+    <label>Email</label>
+    <input type="email"
+           class="form-control"
+           name="email" [(ngModel)]="model.email"
+           required
+           pattern="[^ @]*@[^ @]*"
+           #email="ngModel">
+    <div class="form-control-feedback"
+         *ngIf="email.errors && (email.dirty || email.touched)">
+      <p *ngIf="email.errors.required" class=error-color>Email is required</p>
+      <p *ngIf="email.errors.pattern" class=error-color>Email must contain at least the @ character</p>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="form-group">
+    <label>Activity</label>
+    <select class="form-control" name="activity" [(ngModel)]="model.activity.id" required>
+      <option value="">Please select a Activity</option>
+      <option *ngFor="let activity of Activities"
+              [value]="activity.id" >
+        {{activity.name}}
+      </option>
+    </select>
+    <div class="form-control-feedback"
+         *ngIf="email.errors && (email.dirty || email.touched)">
+      <p *ngIf="email.errors.required" class=error-color>Email is required</p>
+      <p *ngIf="email.errors.pattern" class=error-color>Email must contain at least the @ character</p>
+    </div>
+  </div>
+
+<button type="submit" class="btn btn-primary" [disabled]="f.invalid">Submit</button>
+</form>

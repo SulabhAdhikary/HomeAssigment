@@ -1,0 +1,10 @@
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.deps.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.runtimeconfig.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.runtimeconfig.dev.json

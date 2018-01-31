@@ -1,0 +1,16 @@
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\WebProjectTest.deps.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\WebProjectTest.runtimeconfig.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\WebProjectTest.runtimeconfig.dev.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\WebProjectTest.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\obj\Debug\netcoreapp2.0\WebProjectTest.csprojResolveAssemblyReference.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\obj\Debug\netcoreapp2.0\WebProjectTest.csproj.CoreCompileInputs.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\obj\Debug\netcoreapp2.0\WebProjectTest.AssemblyInfoInputs.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\obj\Debug\netcoreapp2.0\WebProjectTest.AssemblyInfo.cs
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\WebProjectTest.pdb
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\obj\Debug\netcoreapp2.0\WebProjectTest.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\WebProjectTest\obj\Debug\netcoreapp2.0\WebProjectTest.pdb

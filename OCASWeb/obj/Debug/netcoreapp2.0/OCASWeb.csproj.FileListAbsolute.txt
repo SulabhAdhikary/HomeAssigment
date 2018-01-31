@@ -1,0 +1,13 @@
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.deps.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.runtimeconfig.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.runtimeconfig.dev.json
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.pdb
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.csprojResolveAssemblyReference.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.csproj.CoreCompileInputs.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.AssemblyInfoInputs.cache
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.AssemblyInfo.cs
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.pdb
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
