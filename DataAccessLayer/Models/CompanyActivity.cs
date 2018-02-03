@@ -5,12 +5,12 @@ namespace DataAccessLayer.Models
 {
     public partial class CompanyActivity
     {
-        public int Id { get; set; }
-        public int? ActivityId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
+        public virtual int Id { get; set; }
+        public virtual int? ActivityId { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string Email { get; set; }
 
-        public Activity Activity { get; set; }
+        public virtual Activity Activity { get; set; }
     }
 }

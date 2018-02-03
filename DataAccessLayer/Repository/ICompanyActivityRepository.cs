@@ -10,5 +10,7 @@ namespace DataAccessLayer.Repository
 
         void AddCompanyActivity(CompanyActivity item);
         IEnumerable<CompanyActivity> GetAll();
+        IEnumerable<Activity> GetAllActivity();
+
     }
 }

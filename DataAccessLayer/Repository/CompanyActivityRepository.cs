@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace DataAccessLayer.Repository
@@ -23,7 +25,12 @@ namespace DataAccessLayer.Repository
 
         public IEnumerable<CompanyActivity> GetAll()
         {
-            return _context.CompanyActivity;
+            return _context.CompanyActivity.Include("Activity");
+        }
+
+        public IEnumerable<Activity> GetAllActivity()
+        {
+            return _context.Activity;
         }
     }
 }

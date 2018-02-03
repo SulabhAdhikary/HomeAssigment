@@ -11,3 +11,16 @@ E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\D
 E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.pdb
 E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
 E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\OCASWeb\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.deps.json
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.runtimeconfig.json
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.runtimeconfig.dev.json
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.dll
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\bin\Debug\netcoreapp2.0\OCASWeb.pdb
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.csprojResolveAssemblyReference.cache
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.csproj.CoreCompileInputs.cache
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.AssemblyInfoInputs.cache
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.AssemblyInfo.cs
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.dll
+C:\Users\sulab\Documents\GitHub\HomeAssigment\OCASWeb\obj\Debug\netcoreapp2.0\OCASWeb.pdb

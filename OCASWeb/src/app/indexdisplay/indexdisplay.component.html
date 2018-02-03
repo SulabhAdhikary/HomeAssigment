@@ -1,3 +1,37 @@
-<p>
-  indexdisplay works!
-</p>
+
+
+
+<div>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name </th>
+        <th>Email</th>
+        <th>Activity Name</th>
+
+      </tr>
+    </thead>
+    <tbody>
+                                  
+      <tr *ngFor="let activity of activities">
+        <td>{{ activity.firstName }}</td>
+        <td>{{ activity.lastName }}</td>
+        <td>{{ activity.email }}</td>
+        <td>{{ activity.activityName }}</td>
+
+        <td>
+          <!--<a routerLink="/detail/{{activity.firstName}}">
+      <span class="badge">Detail</span>
+    </a>-->
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td align="right"><button type="button" class="btn btn-primary" (click)="btnAddClicked()">ADD</button></td>
+        <td><button type="button" class="btn btn-primary" (click)="btnDeleteClicked()">Delete</button></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

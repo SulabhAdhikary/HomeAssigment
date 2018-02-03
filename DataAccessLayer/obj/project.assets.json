@@ -3455,11 +3455,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\DataAccessLayer\\DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\DataAccessLayer\\DataAccessLayer.csproj",
+      "projectPath": "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\DataAccessLayer\\DataAccessLayer.csproj",
       "packagesPath": "C:\\Users\\sulab\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\DataAccessLayer\\obj\\",
+      "outputPath": "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\DataAccessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

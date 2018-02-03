@@ -12617,11 +12617,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\OCASWeb\\OCASWeb.csproj",
+      "projectUniqueName": "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\OCASWeb\\OCASWeb.csproj",
       "projectName": "OCASWeb",
-      "projectPath": "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\OCASWeb\\OCASWeb.csproj",
+      "projectPath": "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\OCASWeb\\OCASWeb.csproj",
       "packagesPath": "C:\\Users\\sulab\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\OCASWeb\\obj\\",
+      "outputPath": "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\OCASWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12640,8 +12640,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "E:\\Projects\\OCASTakeHomeAssignment_V1\\OCASTakeHomeAssignmentSulabh\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\sulab\\Documents\\GitHub\\HomeAssigment\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }

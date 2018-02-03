@@ -1,5 +1,7 @@
 import { Component, OnInit ,ViewChild} from '@angular/core';
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute } from '@angular/router';
+import { ActivityapiclientService } from './../activityapiclient.service'
+import { OcasActivitySignup, OcasActivity} from './../companyActivity';
 
 @Component({
   selector: 'app-add-activity',
@@ -15,40 +17,45 @@ export class AddActivityComponent implements OnInit {
     @ViewChild("f") form: any;
 
 
-    Activities: OcasActivity[] = [
-        { id: 1, name: "activity 1" },
-        { id: 2, name: "activity 2" },
-        { id: 3, name: "activity 3" }
-       ]
 
-    constructor(private activatedRoute: ActivatedRoute) {
-        this.activatedRoute.params.subscribe(parm => console.log(parm));
+    Activities: OcasActivity[];
+    constructor(private activatedRoute: ActivatedRoute, private acservice: ActivityapiclientService)
+    {
+      this.activatedRoute.params.subscribe(parm => console.log(parm));
     }
 
-  ngOnInit() {
-  }
+    ngOnInit()
+    {
+      this.acservice.getAllCompanyActivity().subscribe(activitiy => this.DoManipulation(activitiy));
+    }
 
-
-  Submit() {
-     
-      if (this.form.valid) {
-          console.log('submitted the form');
-          this.form.reset();
+    DoManipulation(apprs: Object) {
+      this.Activities = [];
+      for (let prop in apprs) {
+        let obj = new OcasActivity();
+        obj.id = parseInt(prop);
+        obj.name = apprs[prop];
+        this.Activities.unshift(obj);
       }
-  }
 
-}
-
-class OcasActivity {
-    id: number;
-    name: string;
-}
-
-class OcasActivitySignup {
-    constructor(
-        public firstName: string = '',
-        public lastName: string = '',
-        public email: string = '',
-        public activity: OcasActivity = new OcasActivity()) {
     }
+
+
+    Submit()
+    {
+    if (this.form.valid)
+     {
+      this.acservice.postConpanyActivity(this.form.value).subscribe(res => this.windongUpErroCall(res)));
+      this.form.reset();
+      
+     }
+    }
+
+   windongUpErroCall(activity:any)
+   {
+     console.log('call this before checking error')
+     this.acservice.bubbleUpError().subscribe(t => console.log(t));
+   }
+
 }
+

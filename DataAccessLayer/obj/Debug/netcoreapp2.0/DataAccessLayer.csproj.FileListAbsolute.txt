@@ -8,3 +8,14 @@ E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLay
 E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
 E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.runtimeconfig.json
 E:\Projects\OCASTakeHomeAssignment_V1\OCASTakeHomeAssignmentSulabh\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.deps.json
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.runtimeconfig.json
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\bin\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.dll
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.pdb
+C:\Users\sulab\Documents\GitHub\HomeAssigment\DataAccessLayer\obj\Debug\netcoreapp2.0\DataAccessLayer.csprojResolveAssemblyReference.cache
