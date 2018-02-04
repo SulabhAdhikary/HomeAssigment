@@ -12,6 +12,7 @@ export class IndexdisplayComponent implements OnInit {
 
   SelectedIndex: number = 0;
   filter: boolean = false;
+  showDialog = false;
 
   constructor(private acservice: ActivityapiclientService, private router: Router) { }
 
@@ -48,6 +49,12 @@ export class IndexdisplayComponent implements OnInit {
     // this.filter = !this.filter;
     this.SelectedIndex = eventsargs;
     console.log(this.SelectedIndex);
+  }
+
+  btnDeleteClicked() {
+    if (this.SelectedIndex != 0) {
+      this.showDialog = !this.showDialog
+    }
   }
 
 

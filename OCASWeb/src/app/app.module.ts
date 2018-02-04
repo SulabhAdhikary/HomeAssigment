@@ -12,6 +12,8 @@ import { AddActivityComponent } from './add-activity/add-activity.component';
 import { IndexdisplayComponent } from './indexdisplay/indexdisplay.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ActivityapiclientService } from './activityapiclient.service';
+import { DialogComponent } from './dialog/dialog.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -21,7 +23,8 @@ import { ActivityapiclientService } from './activityapiclient.service';
     TopmenuComponent,
     AddActivityComponent,
     IndexdisplayComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { ActivityapiclientService } from './activityapiclient.service';
         { path: 'Activity/:id', component: AddActivityComponent },
         { path: 'About', component: AboutmeComponent }
     ]),
-    HttpClientModule
+    HttpClientModule,
+    NoopAnimationsModule
   ],
   providers: [ActivityapiclientService],
   bootstrap: [AppComponent]
