@@ -5,32 +5,42 @@
   <table class='table'>
     <thead>
       <tr>
+        <th></th>
         <th>First Name</th>
         <th>Last Name </th>
         <th>Email</th>
         <th>Activity Name</th>
-
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
                                   
       <tr *ngFor="let activity of activities">
+        <td> <input type="radio" name="radiogroup"     [value]="activity.id"  [ngModel]="filter" (ngModelChange)="onFilterChange($event)" /></td>
         <td>{{ activity.firstName }}</td>
         <td>{{ activity.lastName }}</td>
         <td>{{ activity.email }}</td>
         <td>{{ activity.activityName }}</td>
 
         <td>
-          <!--<a routerLink="/detail/{{activity.firstName}}">
-      <span class="badge">Detail</span>
-    </a>-->
+          <a routerLink="/Activity/{{activity.id}}" class="btn btn-info">
+            <span>  Detail  </span>
+          </a>
         </td>
+        <td>
+         
+          </td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
+        <td></td>
+        <td></td>
         <td align="right"><button type="button" class="btn btn-primary" (click)="btnAddClicked()">ADD</button></td>
-        <td><button type="button" class="btn btn-primary" (click)="btnDeleteClicked()">Delete</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="btnDeleteClicked()">Delete</button></td>
+        <td></td>
+        <td></td>
       </tr>
     </tfoot>
   </table>

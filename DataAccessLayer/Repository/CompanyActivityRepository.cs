@@ -23,6 +23,12 @@ namespace DataAccessLayer.Repository
             _context.SaveChanges();
         }
 
+        public void  UpdateCompanyActivity(CompanyActivity item)
+        {
+            _context.CompanyActivity.Update(item);
+            _context.SaveChanges();
+        }
+
         public IEnumerable<CompanyActivity> GetAll()
         {
             return _context.CompanyActivity.Include("Activity");

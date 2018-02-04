@@ -1,5 +1,10 @@
+import { Observable } from 'rxjs/Observable';
+import { HttpErrorResponse } from '@angular/common/http';
+
+
 export class OcasActivitySignup {
   constructor(
+    public id: string = '',
     public firstName: string = '',
     public lastName: string = '',
     public email: string = '',
@@ -16,12 +21,16 @@ export class OcasActivity {
   name: string;
 }
 
+export interface CallBackAfterError {
 
-/*
-  id = t.Id.ToString(),
-  activityId = t.ActivityId.ToString(),
-  firstName = t.FirstName,
-  lastName = t.LastName,
-  email = t.Email,
-  activityName = t.Activity.Name
-*/
+  <T>(): Observable<T>;
+}
+
+
+export interface ErrorDisplayHelper {
+  <T>(error: HttpErrorResponse, caught: T)
+}
+
+
+
+

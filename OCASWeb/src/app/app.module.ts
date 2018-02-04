@@ -31,6 +31,7 @@ import { ActivityapiclientService } from './activityapiclient.service';
         { path: '', component: IndexdisplayComponent },
         { path: 'Home', component: IndexdisplayComponent },
         { path: 'AddActivity', component: AddActivityComponent },
+        { path: 'Activity/:id', component: AddActivityComponent },
         { path: 'About', component: AboutmeComponent }
     ]),
     HttpClientModule

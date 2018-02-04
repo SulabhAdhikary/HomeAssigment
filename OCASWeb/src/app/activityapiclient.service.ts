@@ -1,75 +1,79 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, map, tap, filter} from 'rxjs/operators';
 import { of } from 'rxjs/observable/of';
-import { OcasActivitySignup, OcasActivity } from './companyActivity';
+import { OcasActivitySignup, OcasActivity, CallBackAfterError, ErrorDisplayHelper } from './companyActivity';
+import { ErrorObservable } from 'rxjs/observable/ErrorObservable';
+
+
 
 @Injectable()
 export class ActivityapiclientService {
 
+  //
+  // to do 
+  // try to pass obserable call back function and emit the event
+  // to bubble up server side erorr and display in client
+  //
 
   constructor(private http: HttpClient)
   {
 
   }
-
-  appValidationError: string;
+  
 
   getAllActivity(): Observable<OcasActivitySignup[]>
   {
  
-    return this.http.get<OcasActivitySignup[]>('/api/Ocas').pipe(
-      catchError(this.handleError('getClient', [])))
+    return this.http.get<OcasActivitySignup[]>('/api/Ocas')
+      .pipe(catchError(this.handleError));
   }
 
+  
 
   getAllCompanyActivity(): Observable<Object>
   {
 
-    return this.http.get<Object>('/api/DefaultActivity').pipe(
-      catchError(this.handleError('getAllCompanyActivity', [])))
+    return this.http.get<Object>('/api/DefaultActivity')
+      .pipe(catchError(this.handleError))
   }
 
-  postConpanyActivity(dataToPost: OcasActivitySignup): Observable<Object>
+  postCompanyActivity(dataToPost: OcasActivitySignup,id:number):Observable<Object>
   {
-
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'      
       })
     };
- 
-    return this.http.post<Object>('/api/ocas', { firstName: "sulabh" }, httpOptions).pipe(
-      catchError(this.handleError('post data', [])))
+
+    if (id != 0) {
+      dataToPost.id = id.toString();
+    }
+
+     return this.http.post<Object>('/api/ocas', dataToPost, httpOptions)
+     .pipe<Object>(catchError(this.handleError));
+
   }
 
+  private handleError<T>(error: HttpErrorResponse, caught:T) {
+    if (error.error instanceof ErrorEvent)
+    {
+      // A client-side or network error occurred. Handle it accordingly.
+      console.error('An error occurred:', error.error.message);
+    }else
+    {
+      console.error(`Backend returned code ${error.status}, ` + `body was: ${error.error}`);
+    }
 
-  bubbleUpError(): Observable<Object> {
-    return Observable.create(observer  => {
-      
-      observer.next('jai ma kali tera haat najaye khali');
-      observer.complete();
-      
-    });
-  }
-
+    return new ErrorObservable(
+      {
+         hasError: true,
+         HttpCode: error.status,
+         Message: error.error
+      });
+  };
 
   
-
-
-  private handleError<T>(operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-
-      // TODO: send the error to remote logging infrastructure
-      console.error("my error"); // log to console instead
-
-      // TODO: better job of transforming error for user consumption
-      // this.log(`${operation} failed: ${error.message}`);
-
-      // Let the app keep running by returning an empty result.
-      return of(result as T);
-    };
-  }
 
 }

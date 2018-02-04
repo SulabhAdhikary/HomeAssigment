@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivityapiclientService } from './../activityapiclient.service'
 import { OcasActivitySignup, OcasActivity } from './../companyActivity';
+import { Router } from "@angular/router"
 
 @Component({
   selector: 'indexdisplay',
@@ -9,23 +10,24 @@ import { OcasActivitySignup, OcasActivity } from './../companyActivity';
 })
 export class IndexdisplayComponent implements OnInit {
 
-  constructor(private acservice: ActivityapiclientService) { }
+  SelectedIndex: number = 0;
+  filter: boolean = false;
+
+  constructor(private acservice: ActivityapiclientService, private router: Router) { }
 
   activities: OcasActivitySignup[];
 
   ngOnInit() {
    
     this.acservice.getAllActivity()
-   
       .subscribe(activitiy => this.DoManipulation(activitiy));
   }
 
   DoManipulation(apprs: OcasActivitySignup[]) {
-    console.log('test called');
-    this.activities = [];;
-
+    this.activities = [];
     for (let childObj of apprs) {
       let obj = new OcasActivitySignup();
+      obj.id = childObj.id,
       obj.firstName = childObj.firstName;
       obj.lastName = childObj.lastName;
       obj.email = childObj.email;
@@ -33,10 +35,19 @@ export class IndexdisplayComponent implements OnInit {
       obj.activityName = childObj.activityName
       this.activities.unshift(obj);
     }
-   
-    console.log(this.activities);
-   
+  }
 
+
+  btnAddClicked()
+  {
+    this.router.navigate(['Activity/0'])
+  
+  }
+
+  onFilterChange(eventsargs) {
+    // this.filter = !this.filter;
+    this.SelectedIndex = eventsargs;
+    console.log(this.SelectedIndex);
   }
 
 

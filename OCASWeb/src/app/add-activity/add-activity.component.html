@@ -34,12 +34,9 @@
   </div>
 
 
-
-
-
   <div class="form-group">
     <label>Activity</label>
-    <select class="form-control" name="activity" [(ngModel)]="model.activity.id" required>
+    <select class="form-control" name="activityId" [(ngModel)]="model.activity.id" required   #activity="ngModel">
       <option value="">Please select a Activity</option>
       <option *ngFor="let activity of Activities"
               [value]="activity.id" >
@@ -47,11 +44,18 @@
       </option>
     </select>
     <div class="form-control-feedback"
-         *ngIf="email.errors && (email.dirty || email.touched)">
-      <p *ngIf="email.errors.required" class=error-color>Email is required</p>
-      <p *ngIf="email.errors.pattern" class=error-color>Email must contain at least the @ character</p>
+         *ngIf="activity.errors && (activity.dirty || activity.touched)">
+      <p *ngIf="activity.errors.required" class=error-color>Activity is required</p>
+    
     </div>
   </div>
   <pre>{{f.value|json}}</pre>
 <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Submit</button>
 </form>
+
+<!--<ul *ngIf="!f.invalid" style="color:red">
+  <li *ngFor="let error of formErrors" >
+    
+  </li>
+</ul>-->
+

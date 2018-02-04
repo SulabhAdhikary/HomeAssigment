@@ -23,16 +23,16 @@ namespace OCASWeb.ViewDomains
 
             if (companyActivityModel == null)
             {
-              _domainResultModel.AddError(string.Format("activity model{0} ", EmptyErrorSuffix));
+              _domainResultModel.AddError("firstName",string.Format("activity model{0} ", EmptyErrorSuffix));
             }
             else
             {
-              _domainResultModel.AddError(CheckString(companyActivityModel.firstName, "First Name", MaxLength));
-              _domainResultModel.AddError(CheckString(companyActivityModel.lastName, "Last Name", MaxLength));
-              _domainResultModel.AddError(CheckString(companyActivityModel.email, "Email", MaxLength));
-              _domainResultModel.AddError(CheckString(companyActivityModel.activityId, "Activity", MaxLengthActivity));       
+              _domainResultModel.AddError("firstName",CheckString(companyActivityModel.firstName, "First Name", MaxLength));
+              _domainResultModel.AddError("lastName",CheckString(companyActivityModel.lastName, "Last Name", MaxLength));
+              _domainResultModel.AddError("email",CheckString(companyActivityModel.email, "Email", MaxLength));
+              _domainResultModel.AddError("activity",CheckString(companyActivityModel.activityId, "Activity", MaxLengthActivity));       
             }
-            if (_domainResultModel.Errors.Count == 0)
+            if (_domainResultModel.Errors ==null ||_domainResultModel.Errors.Count == 0)
             {
               _domainResultModel.AddSuccess(true);
             }

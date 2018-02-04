@@ -16,25 +16,25 @@ namespace OCASWeb.PresentationValidation
             }
         }
      
-        private List<string> _errors;
-        public List<string> Errors { get { return _errors; } }
+        private Dictionary<string,string> _errors;
+        public Dictionary<string, string> Errors { get { return _errors; } }
 
         public void AddSuccess(bool any)
         {
             this._success = any;
         }
 
-        public void AddError(string text)
+        public void AddError(string control,string Errormessagetext)
         {
-            if (string.IsNullOrEmpty(text))
+            if (string.IsNullOrEmpty(Errormessagetext))
             {
                 return;
             }
             if (this._errors == null)
             {
-                this._errors = new List<string>();
+                this._errors = new Dictionary<string, string>();
             }
-            this._errors.Add(text);
+            this._errors.Add(control, Errormessagetext);
         }
 
 
