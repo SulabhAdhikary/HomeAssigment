@@ -39,5 +39,45 @@ namespace WebProjectTest
             var test = objcom.GetAll();
             Assert.AreEqual(3, test.Count());
         }
+
+
+        [TestMethod]
+        public void TestAddCompanyActivity()
+        {
+            var activity = new Activity();
+            activity.Id = 1;
+            activity.Name = "Activity 1";
+            var data = new List<CompanyActivity>
+            {
+                 new CompanyActivity { Id=1,Activity=activity,Email="firstlast1@gmail.com",FirstName="first1",LastName=  "BBB" },
+                  new CompanyActivity { Id=2,Activity=activity,Email="firstlast2@gmail.com",FirstName="first2",LastName=  "BBB" },
+                  new CompanyActivity { Id=3,Activity=activity,Email="firstlast3@gmail.com",FirstName="first3",LastName=  "BBB" }
+            }.AsQueryable();
+
+            var mockSet = new Mock<DbSet<CompanyActivity>>();
+            var mockContext = new Mock<OcasAssignmentContext>();
+            mockContext.Setup(m => m.CompanyActivity).Returns(mockSet.Object);
+        
+
+            CompanyActivity objCompanyActivity = new CompanyActivity
+            {
+                Id = 2,
+                Email = "firstlast2@gmail.com",
+                LastName = "lastmodified",
+                FirstName = "first2",
+                Activity=activity
+            };
+
+            CompanyActivityRepository objcom = new CompanyActivityRepository(mockContext.Object);
+            objcom.UpdateCompanyActivity(objCompanyActivity);
+            mockSet.Verify(t => t.Update(objCompanyActivity), Times.Once);
+
+
+
+
+
+
+
+        }
     }
 }

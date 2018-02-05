@@ -30,10 +30,8 @@ namespace OCASWeb
 
     public void ConfigureServices(IServiceCollection services)
      {
-
-      string connection = @"Server=.\SQLEXPRESS;Database=OcasAssignment;Trusted_Connection=True;";
+      string connection = Configuration["ConnectionStrings:serverConnectionString"];
       services.AddDbContext<OcasAssignmentContext>(options => options.UseSqlServer(connection));
-      
       services.AddMvc();
       services.AddTransient<ICompanyActivityRepository, CompanyActivityRepository>();
     }
